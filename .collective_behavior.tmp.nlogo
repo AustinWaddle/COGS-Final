@@ -26,13 +26,13 @@ Patches-own [party side]
      end
 
      to move
-     repeat 100 [
+
      let sumz (sum [party] of neighbors) + (random randomness) - (random randomness)
      if sumz < 4 [set party 0]
      if sumz > 4 [set party 1]
     (ifelse  side = 1 [set party 0]  side = 2 [set party 1])
     ifelse  party = 1 [set pcolor blue] [set pcolor red]
-  ]
+
 
 
 
@@ -132,7 +132,7 @@ randomness
 randomness
 0
 3
-1.0
+2.0
 1
 1
 NIL
@@ -147,7 +147,7 @@ polarity
 polarity
 0
 50
-30.0
+15.0
 1
 1
 NIL
